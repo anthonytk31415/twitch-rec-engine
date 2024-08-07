@@ -3,7 +3,7 @@
 ## Summary
 An API to deliver Twitch Stream Recommendations based on the user's consumption history and views preferences, favorites, and up-to-date Twitch popular streaming activity.
 
-## Build Details: 
+## Build Details
 - twitch-rec-engine uses Java version 17.
 - We use Gradle for the build automation tool. 
 - We use MySQL database connections for our data store. 

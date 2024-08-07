@@ -45,5 +45,5 @@ spring:
 logging:
   level:
     org.apache.coyote.http11.Http11InputBuffer: DEBUG # Incoming http requests
-    com.laioffer.twitch.external.TwitchApiClient: DEBUG
+    com.tpd.twitch.external.TwitchApiClient: DEBUG
     org.springframework.jdbc.core: DEBUG # SQL
