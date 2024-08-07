@@ -34,7 +34,7 @@ public class UserService {
 
         // The code used above this line is all default code from Spring Security. Spring Security doesn't concern
         // itself with user-related information that's unrelated to security.
-        // So, I use this API to retrieve them for easier manipulation.
+        // We use the API to retrieve them for easier manipulation.
     }
 
     public UserEntity findByUsername(String username) {
