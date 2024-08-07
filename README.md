@@ -60,6 +60,5 @@ For encryption, for passwords and such, Spring stores passwords as hashed, not t
 
 ## Running the app
 To run the app, run the build via gradle and run the app:
->gradle build
-
->gradle bootRun
+```gradle build```
+```gradle bootRun```
