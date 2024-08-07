@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tpd.twitch.FavoriteServiceTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-08-07T17:47:55" hostname="anthonys-mbp.lan" time="0.229">
+  <properties/>
+  <testcase name="whenItemNotExist_setFavoriteItem_shouldSaveItem()" classname="com.tpd.twitch.FavoriteServiceTests" time="0.221"/>
+  <testcase name="whenItemNotExist_unsetFavoriteItem_shouldNotDeleteFavoriteRecord()" classname="com.tpd.twitch.FavoriteServiceTests" time="0.001"/>
+  <testcase name="whenItemExist_setFavoriteItem_shouldNotSaveItem()" classname="com.tpd.twitch.FavoriteServiceTests" time="0.002"/>
+  <testcase name="whenItemExist_unsetFavoriteItem_shouldDeleteFavoriteRecord()" classname="com.tpd.twitch.FavoriteServiceTests" time="0.001"/>
+  <testcase name="setFavoriteItem_shouldCreateFavoriteRecord()" classname="com.tpd.twitch.FavoriteServiceTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

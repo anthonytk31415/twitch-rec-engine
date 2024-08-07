@@ -1,4 +1,5 @@
-// 这是可以拿来对DB做操作的interface了。我们不需要在里面implement要去执行的内容，因为我们extend了parent interface
+// This is an interface that can be used to operate on the database. 
+// We don't need to implement the actual execution details inside it because we have extended a parent interface.
 package com.tpd.twitch.db;
 
 import com.tpd.twitch.db.entity.ItemEntity;

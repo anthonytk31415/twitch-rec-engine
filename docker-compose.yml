@@ -1,12 +1,11 @@
-# specify environmental parameters including mySQL database domain(%), name of the database, password, terminal. Where files are saved etc.
-# port 端口？不连接就无法通讯 -  Spring 端口是8080； mysql的端口是3306
-# 这个yml file specify docker 里面的infrastructure，告诉它怎么去run
-# docker是一个虚拟机。
+# Specify environmental parameters including MySQL database domain (%), database name, password, terminal, and file save locations.
+# Port: Ports? Communication is impossible without connecting - Spring port is 8080; MySQL port is 3306.
+# This YML file specifies the infrastructure inside Docker and tells it how to run.
+# Docker is a virtual machine.
 version: '3.8'
 
 services:
-  db:     #创建了一个database server =>这个server里面有软件叫MySQL。这个MySQL可以运行不一样的database
-  #(假如我们bootcamp里的其他project也用MySQL的话，我们也可以用这个server run，每个database都有自己的名字用MYSQL_DATABASE field来定义)
+  db:     #Created a database server => This server has software called MySQL. MySQL can run different databases. (If other projects in our portfolio also use MySQL, we can use this server to run them. Each database has its own name defined by the MYSQL_DATABASE field.)
     image: mysql:latest
     environment:
       MYSQL_ROOT_HOST: '%'

@@ -1,5 +1,5 @@
-// 项目的type是gradle type： This document specifies that we use Java as main language, this project group, version and all the details are recorded here
-// Here, it also documents all the dependencies to support the web applications to operate
+// The project's type is Gradle: This document specifies that we use Java as the main language. It records the project group, version, and all the details here.
+// It also documents all the dependencies required to support the web applications.
 
 plugins {
     id 'java'
@@ -14,7 +14,7 @@ java {
     sourceCompatibility = '17'
 }
 
-// 为了在这用，那在哪里找？ 去mavenCentral找
+// To use it here, where do I find it? Go to Maven Central.
 repositories {
     mavenCentral()
 }
@@ -26,8 +26,9 @@ dependencyManagement {
 }
 
 dependencies {
-    // implementation: 代码需要import之后implement
-    // runtime：我不需要import，我只需要run time运行的时候，有就可以
+    // implementation: The code needs to be imported and then implemented
+    // runtime: I don't need to import it; I just need it to be available at runtime
+    implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'com.github.ben-manes.caffeine:caffeine:3.+'
     implementation 'com.github.javafaker:javafaker:1.0.2'
     implementation 'org.springframework.boot:spring-boot-starter-cache'
@@ -43,3 +44,7 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+// task wrapper(type: Wrapper) {
+//     gradleVersion = '8.1.1'  // Adjust this to the latest version compatible with Java 22
+// }
