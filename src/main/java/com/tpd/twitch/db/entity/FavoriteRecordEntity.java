@@ -10,6 +10,6 @@ public record FavoriteRecordEntity(
         @Id Long id,
         Long userId,
         Long itemId,
-        Instant createdAt    // 代表一个time stamp - java里面的时间怎么处理的？Instant代表timestamp，精准度高，不被不同的time zone影响
+        Instant createdAt    // Representing a timestamp - How is time handled in Java? An Instant represents a timestamp with high precision and is not affected by different time zones.
 ) {
 }
