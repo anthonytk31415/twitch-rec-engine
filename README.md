@@ -51,11 +51,11 @@ Given the body.favorite(), delete the favorite item from the user favorites.
 ### Twitch API Client 
 We use the TwitchApiClient to communicate with the Twitch API to fetch information on users, friends of users, etc. on Twitch item consumption activty, and item metadata. Here are the get mappings the program invokes to gather data currently: 
 
-```@GetMapping("/games")```
-```@GetMapping("/games/top")```
-```@GetMapping("/videos/")```
-```@GetMapping("/clips/")```
-```@GetMapping("/streams/")```
+- ```@GetMapping("/games")```
+- ```@GetMapping("/games/top")```
+- ```@GetMapping("/videos/")```
+- ```@GetMapping("/clips/")```
+- ```@GetMapping("/streams/")```
 
 ### User Authentication
 The AppConfig class is responsible for configuring Spring Security settings for authentication and authorization, including rules for permitting or restricting access to various paths and resources. It also customizes the behavior of the authentication and authorization process, as well as the handling of login, logout, and error situations.
@@ -87,18 +87,18 @@ Here is a walkthrough of what we used for unit testing, some methods/annotations
 ### JUnit 5 (org.junit.jupiter):
 A widely-used testing framework for Java for unit testing.
 Key components used:
-@Test: Marks a method as a test method.
-@BeforeEach: Annotates a method to be run before each test.
-Assertions: Contains assertion methods for comparing expected results with actual outcomes.
+- ```@Test```: Marks a method as a test method.
+- ```@BeforeEach```: Annotates a method to be run before each test.
+- Assertions: Contains assertion methods for comparing expected results with actual outcomes.
 
 ### Mockito (org.mockito):
 A popular mocking framework used to mock dependencies and verify interactions in unit tests.
 Key components used:
-@Mock: To mock external dependencies (ItemRepository, FavoriteRecordRepository).
-@Captor: Used to capture arguments passed to a method call (favoriteRecordArgumentCaptor).
-Mockito.when(): To define the behavior of mocked methods.
-Mockito.verify(): To verify interactions with mocked objects.
-Mockito.never(), Mockito.verifyNoInteractions(): To ensure that certain interactions did not occur.
+- ```@Mock```: To mock external dependencies (ItemRepository, FavoriteRecordRepository).
+- ```@Captor```: Used to capture arguments passed to a method call (favoriteRecordArgumentCaptor).
+- ```Mockito.when()```: To define the behavior of mocked methods.
+- ```Mockito.verify()```: To verify interactions with mocked objects.
+- ```Mockito.never()```, ```Mockito.verifyNoInteractions()```: To ensure that certain interactions did not occur.
 
 ### Mockito JUnit 5 Extension (MockitoExtension):
 Used to initialize and manage mocks created by Mockito.
