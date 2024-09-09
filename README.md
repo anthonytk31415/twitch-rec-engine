@@ -10,19 +10,19 @@
 - We use J
 ## API Routes
 
-### GET /recommendation
+```GET /recommendation```
 Based on the login user, get the list of recommended items based on consumption activity, popular items. and friends item consumption activity, with logic defined by the recommendation engine. 
 
-### GET /game
+```GET /game```
 Get a list of Twitch's top games currently defined via the Twitch API. 
 
-### POST /register
+```POST /register```
 Initiate a user registration path. In the body, we require username, password, firstname, and lastname. 
 
-### POST /login
+```POST /login```
 Given a username and password, attempt to login. 
 
-### POST /logout
+```POST /logout```
 Logout of the current logged in user. 
 
 ### GET /search?game_id={game_id}
