@@ -1,15 +1,13 @@
 # twitch-rec-engine
 
 ## Summary
-<code>twitch-rec-engine</code>
-
-An API to deliver Twitch Stream Recommendations based on the user's consumption history and views preferences, favorites, and up-to-date Twitch popular streaming activity.
+<code>twitch-rec-engine</code> is an API that delivers Twitch Stream Recommendations based on the user's consumption history and views preferences, favorites, and up-to-date Twitch popular streaming activity. Sign up, log in, view Twitch, and explore our platform's Twitch Recommendations!
 
 ## Build Details
 - twitch-rec-engine uses Java version 17.
 - We use Gradle for the build automation tool. 
 - We use MySQL database connections for our data store. 
-
+- We use J
 ## API Routes
 
 ### GET /recommendation
@@ -66,3 +64,33 @@ To run the app, run the build via gradle and run the app:
 ```gradle build```
 
 ```gradle bootRun```
+
+
+## Deploying Live
+One way to deploy this live is to use the following services on AWS: 
+- Use AWS App Runner to host and run the app. No scalability settings required. Fairly easy and straightforward. Also integrates easily with...
+- AWS RDS with MySQL. Also straightforward to run. 
+
+
+## Unit Testing Walkthrough
+Here is a walkthrough of what we used for unit testing, some methods/annotations we use and rationale:
+
+### JUnit 5 (org.junit.jupiter):
+A widely-used testing framework for Java for unit testing.
+Key components used:
+@Test: Marks a method as a test method.
+@BeforeEach: Annotates a method to be run before each test.
+Assertions: Contains assertion methods for comparing expected results with actual outcomes.
+
+### Mockito (org.mockito):
+A popular mocking framework used to mock dependencies and verify interactions in unit tests.
+Key components used:
+@Mock: To mock external dependencies (ItemRepository, FavoriteRecordRepository).
+@Captor: Used to capture arguments passed to a method call (favoriteRecordArgumentCaptor).
+Mockito.when(): To define the behavior of mocked methods.
+Mockito.verify(): To verify interactions with mocked objects.
+Mockito.never(), Mockito.verifyNoInteractions(): To ensure that certain interactions did not occur.
+
+### Mockito JUnit 5 Extension (MockitoExtension):
+Used to initialize and manage mocks created by Mockito.
+It is added via @ExtendWith(MockitoExtension.class).
