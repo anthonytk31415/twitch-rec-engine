@@ -11,30 +11,39 @@
 ## API Routes
 
 ```GET /recommendation```
+
 Based on the login user, get the list of recommended items based on consumption activity, popular items. and friends item consumption activity, with logic defined by the recommendation engine. 
 
 ```GET /game```
+
 Get a list of Twitch's top games currently defined via the Twitch API. 
 
 ```POST /register```
+
 Initiate a user registration path. In the body, we require username, password, firstname, and lastname. 
 
 ```POST /login```
+
 Given a username and password, attempt to login. 
 
 ```POST /logout```
+
 Logout of the current logged in user. 
 
-### GET /search?game_id={game_id}
+```GET /search?game_id={game_id}```
+
 Given a gameId, return TypeGroupedItemList from the Twitch API.
 
-### GET /favorite
+```GET /favorite```
+
 Return a list of the user's favorites. 
 
-### POST /favorite
+```POST /favorite```
+
 Given the body.favorite(), add the favorite item from the user favorites. 
 
-### DELETE /favorite 
+```DELETE /favorite```
+
 Given the body.favorite(), delete the favorite item from the user favorites. 
 
 ## Key Featuers
@@ -42,11 +51,11 @@ Given the body.favorite(), delete the favorite item from the user favorites.
 ### Twitch API Client 
 We use the TwitchApiClient to communicate with the Twitch API to fetch information on users, friends of users, etc. on Twitch item consumption activty, and item metadata. Here are the get mappings the program invokes to gather data currently: 
 
-@GetMapping("/games")
-@GetMapping("/games/top")
-@GetMapping("/videos/")
-@GetMapping("/clips/")
-@GetMapping("/streams/")
+```@GetMapping("/games")```
+```@GetMapping("/games/top")```
+```@GetMapping("/videos/")```
+```@GetMapping("/clips/")```
+```@GetMapping("/streams/")```
 
 ### User Authentication
 The AppConfig class is responsible for configuring Spring Security settings for authentication and authorization, including rules for permitting or restricting access to various paths and resources. It also customizes the behavior of the authentication and authorization process, as well as the handling of login, logout, and error situations.
