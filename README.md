@@ -1,4 +1,5 @@
 # twitch-rec-engine
+![Error loading](./assets/cover.jpg)
 
 ## Summary
 <code>twitch-rec-engine</code> is an API that delivers Twitch Stream Recommendations based on the user's consumption history and views preferences, favorites, and up-to-date Twitch popular streaming activity. Sign up, log in, view Twitch, and explore our platform's Twitch Recommendations!
