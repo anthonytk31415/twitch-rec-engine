@@ -7,7 +7,8 @@
 - twitch-rec-engine uses Java version 17.
 - We use Gradle for the build automation tool. 
 - We use MySQL database connections for our data store. 
-- We use J
+- We use JUnit, Mockito for Unit Testing. 
+
 ## API Routes
 
 ```GET /recommendation```
@@ -63,10 +64,8 @@ The AppConfig class is responsible for configuring Spring Security settings for 
 - Uses session based cookies - upon successful login, a session is created, and a session cookie is sent to the client to maintain the user's authentication state.
 
 ### Security
-The AppConfig class is responsible for configuring Spring Security settings for authentication and authorization, including rules for permitting or restricting access to various paths and resources. It also customizes the behavior of the authentication and authorization process, as well as the handling of login, logout, and error situations.
-
-For encryption, for passwords and such, Spring stores passwords as hashed, not the original passwords set by the user, and the program implements additional hashing features for added security. 
-
+For encryption, for proprietary data, we use Spring to store data as hashed. 
+ 
 ## Running the app
 To run the app, run the build via gradle and run the app:
 
