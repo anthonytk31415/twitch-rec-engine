@@ -1,6 +1,8 @@
 # twitch-rec-engine
 
 ## Summary
+<code>twitch-rec-engine</code>
+
 An API to deliver Twitch Stream Recommendations based on the user's consumption history and views preferences, favorites, and up-to-date Twitch popular streaming activity.
 
 ## Build Details
